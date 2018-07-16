@@ -77,44 +77,48 @@
                                 <li class="active">学生列表</li>
                             </ol>
                         </div>
-                        <div class="panel-heading">
-                            <div class="input-group">
-                                <span class="input-group-addon" id="basic-addon1">学生姓名</span>
-                                <input type="text" class="form-control" id="studentNameId" placeholder="请输入学生姓名进行查询" aria-describedby="basic-addon1" style="width:200px;margin-right:10px;"
-                                    value="">
-                                <input type="button" class="btn btn-success" onclick="search()" value="查找" style="margin-right:10px;">
-                                <input type="button" class="btn btn-success" value="新增" onclick="window.location.href='/studentmanager/add'">
-                            </div>
-
-                        </div>
                         <div class="panel-body">
-                            <table class="table table-bordered">
-                                <thead>
-                                    <tr>
-                                        <th>姓名</th>
-                                        <th>年龄</th>
-                                        <th>性别</th>
-                                        <th>手机号码</th>
-                                        <th>操作</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-sm-2 control-label">姓名</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="userName" placeholder="请善待程序员">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="age" class="col-sm-2 control-label">年龄</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="age" placeholder="Password">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="age" class="col-sm-2 control-label">性别</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="age" placeholder="男">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="age" class="col-sm-2 control-label">电话</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="age" placeholder="Password">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="age" class="col-sm-2 control-label">年龄</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="age" placeholder="Password">
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                        <button type="submit" class="btn btn-default">Sign in</button>
+                                    </div>
+                                </div>
+                            </form>
 
-                                    <tr>
-                                        <td>杨胜鹏</td>
-                                        <td>200</td>
-                                        <td>不男不女</td>
-                                        <td>15872512253</td>
-                                        <td>
-                                            <a href="" class="btn btn-success">编辑</a> |
-
-                                            <input type="button" class="btn btn-danger" value="删除">
-                                        </td>
-                                    </tr>
-
-                                </tbody>
-                            </table>
                         </div>
+                       
 
 
                     </div>
